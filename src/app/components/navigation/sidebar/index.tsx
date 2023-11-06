@@ -13,7 +13,7 @@ const Sidebar = ({isOpen, toggle}: {isOpen: boolean; toggle: () => void}): JSX.E
           {/* Close icon */}
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
             <path
-              fill="currentColor"
+              fill="black"
               d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
             />
           </svg>
@@ -23,31 +23,27 @@ const Sidebar = ({isOpen, toggle}: {isOpen: boolean; toggle: () => void}): JSX.E
           <li>
             <Link href="/about" onClick={toggle}>
               <p>Home</p>
+              <p className="text-black">Home</p>
             </Link>
           </li>
           <li>
             <Link href="/about" onClick={toggle}>
-              <p>About</p>
+              <p className="text-black">About</p>
             </Link>
           </li>
           <li>
             <Link href="/services" onClick={toggle}>
-              <p>Tech Stack</p>
+              <p className="text-black">Tech Stack</p>
             </Link>
           </li>
           <li>
             <Link href="/contacts" onClick={toggle}>
-              <p>Professional Experience</p>
+              <p className="text-black">Professional Experience</p>
             </Link>
           </li>
           <li>
             <Link href="/about" onClick={toggle}>
-              <p>Contact</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" onClick={toggle}>
-              <ion-icon name="logo-github"></ion-icon>
+              <p className="text-black">Contact</p>
             </Link>
           </li>
         </ul>
