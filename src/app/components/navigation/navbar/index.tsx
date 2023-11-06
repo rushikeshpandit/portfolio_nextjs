@@ -42,12 +42,15 @@ const Navbar = ({toggle}: {toggle: () => void}) => {
                 </Link>
               </li>
               <li>
-                <Link href="/about" onClick={toggle}>
+                <Link href="https://github.com/rushikeshpandit" target="_blank" rel="noopener noreferrer">
                   <Image src="/logo-github.svg" alt="github" width={'25'} height={'25'} className="relative" />
                 </Link>
               </li>
               <li>
-                <Link href="/about" onClick={toggle}>
+                <Link
+                  href="https://www.linkedin.com/in/rushikesh-pandit-646834100/"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   <Image src="/logo-linkedin.svg" alt="linkedin" width={'25'} height={'25'} className="relative" />
                 </Link>
               </li>
