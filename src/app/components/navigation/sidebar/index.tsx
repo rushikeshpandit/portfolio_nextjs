@@ -21,8 +21,7 @@ const Sidebar = ({isOpen, toggle}: {isOpen: boolean; toggle: () => void}): JSX.E
 
         <ul className="sidebar-nav text-center leading-relaxed text-xl">
           <li>
-            <Link href="/about" onClick={toggle}>
-              <p>Home</p>
+            <Link href="/home" onClick={toggle}>
               <p className="text-black">Home</p>
             </Link>
           </li>
@@ -32,17 +31,17 @@ const Sidebar = ({isOpen, toggle}: {isOpen: boolean; toggle: () => void}): JSX.E
             </Link>
           </li>
           <li>
-            <Link href="/services" onClick={toggle}>
+            <Link href="/techstack" onClick={toggle}>
               <p className="text-black">Tech Stack</p>
             </Link>
           </li>
           <li>
-            <Link href="/contacts" onClick={toggle}>
+            <Link href="/professional" onClick={toggle}>
               <p className="text-black">Professional Experience</p>
             </Link>
           </li>
           <li>
-            <Link href="/about" onClick={toggle}>
+            <Link href="/contact" onClick={toggle}>
               <p className="text-black">Contact</p>
             </Link>
           </li>

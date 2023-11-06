@@ -27,17 +27,17 @@ const Navbar = ({toggle}: {toggle: () => void}) => {
                 </Link>
               </li>
               <li>
-                <Link href="/services" >
+                <Link href="/techstack" >
                   <p className="text-black">Tech Stack</p>
                 </Link>
               </li>
               <li>
-                <Link href="/contacts" >
+                <Link href="/professional" >
                   <p className="text-black">Professional Experience</p>
                 </Link>
               </li>
               <li>
-                <Link href="/about" >
+                <Link href="/contact" >
                   <p className="text-black">Contact</p>
                 </Link>
               </li>
