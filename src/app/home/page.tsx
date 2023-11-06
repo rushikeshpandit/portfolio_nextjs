@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="bg-red flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex w-full h-full bg-white sticky top-0 items-center justify-between">
       <p className="text-black">Home page from folder</p>
     </main>
   );
