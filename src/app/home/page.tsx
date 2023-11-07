@@ -4,13 +4,13 @@ export default function Home() {
   const renderText = () => {
     return (
       <div>
-        <p className="mx-20 text-black text-7xl font-bold">Hi 👋 , </p>
-        <p className="mx-20 text-black text-7xl font-bold">My name is </p>
+        <p className="mx-20 text-[#42446E] text-7xl font-bold">Hi 👋 , </p>
+        <p className="mx-20 text-[#42446E] text-7xl font-bold">My name is </p>
         <h1 className="mx-20 text-7xl font-bold bg-gradient-to-r from-blue-400 to-indigo-600 inline-block text-transparent bg-clip-text">
           Rushikesh Pandit
         </h1>
-        <p className="mx-20 text-black text-7xl font-bold">I build things for </p>
-        <p className="mx-20 text-black text-7xl font-bold">web and mobile</p>
+        <p className="mx-20 text-[#42446E] text-7xl font-bold">I build things for </p>
+        <p className="mx-20 text-[#42446E] text-7xl font-bold">web and mobile</p>
       </div>
     );
   };
