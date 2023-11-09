@@ -50,13 +50,23 @@ export const info = {
   socials: [
     {
       link: "https://github.com/rushikeshpandit",
-      icon: "fa fa-github",
+      icon: "/github.svg",
       label: "github",
     },
     {
       link: "https://www.linkedin.com/in/rushikesh-pandit-646834100/",
-      icon: "fa fa-linkedin",
+      icon: "/linkedin.svg",
       label: "linkedin",
+    },
+    {
+      link: "tel:+917588945789",
+      icon: "/mobile.svg",
+      label: "mobile",
+    },
+    {
+      link: "mailto:rushikesh.d.pandit@gmail.com",
+      icon: "/email.svg",
+      label: "email",
     },
     // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
     // Just change the links so that they lead to your social profiles.
@@ -132,7 +142,7 @@ export const info = {
       image: "/xcode.svg"
     },
   ],
-  
+
   // portfolio: [
   //   // This is where your portfolio projects will be detailed
 
