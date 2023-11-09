@@ -6,7 +6,9 @@ export default function TechStack() {
     <main>
       <div className="pt-10 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
         <h2 className="text-[#42446E]  font-bold, text-5xl">My Tech Stack</h2>
-        <h3 className="text-[#666666]  font-bold, text-xl pt-10 pb-10">Technologies I've been working with recently</h3>
+        <h3 className="text-[#666666]  font-bold, text-xl pt-10 pb-10">
+          Technologies I&apos;ve been working with recently
+        </h3>
         <div className="p-10 h-auto w-auto mx-auto flex flex-wrap">
           {info.techStack.map(({name, image}) => (
             <div key={name} className="w-18 h-18 m-12 flex-col flex items-center justify-center">
