@@ -35,7 +35,7 @@ export default function Home() {
         {renderImage() /** This is for smaller screen */}
         {renderText()}
       </div>
-      <div className="hidden md:flex  h-screen w-screen container mx-auto bg-white items-center justify-evenly flex-row">
+      <div className="hidden md:flex h-screen w-screen container mx-auto bg-white items-center justify-evenly flex-row">
         {renderText() /** This is for bigger screen */}
         {renderImage(true)}
       </div>

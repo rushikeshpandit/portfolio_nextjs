@@ -120,6 +120,10 @@ export const info = {
       image: "/typescript.svg"
     },
     {
+      name: "Tailwind CSS",
+      image: "/tailwind.svg"
+    },
+    {
       name: "VS Code",
       image: "/vs-code.svg"
     },
@@ -128,37 +132,7 @@ export const info = {
       image: "/xcode.svg"
     },
   ],
-  skills: {
-    proficientWith: [
-      "javascript",
-      "react",
-      "GIT",
-      "react-native",
-      "Swift",
-      "CircleCI",
-      "Fastlane",
-      "CI/CD",
-      "Firebase",
-      "Push Notification",
-    ],
-    exposedTo: ["nodejs", "Spring Boot", "SwiftUI", "Flutter", "Elixir", "Phoenix Framework"],
-  },
-  hobbies: [
-    {
-      label: "reading",
-      emoji: "📖",
-    },
-    {
-      label: "learning new technologies",
-      emoji: "📖",
-    },
-    {
-      label: "driving",
-      emoji: "🚗",
-    },
-    // Same as above, change the emojis to match / relate to your hobbies or interests.
-    // You can also remove the emojis if you'd like, I just think they look cute :P
-  ],
+  
   // portfolio: [
   //   // This is where your portfolio projects will be detailed
 
@@ -206,7 +180,7 @@ export const info = {
       company: "FIS Global",
       designation: "Senior Software Engineer",
       location: "Bangalore",
-      duration: "Sept-2021 - Present",
+      duration: "Sep-2021 - Present",
       achievement: "",
       isWork: true,
       responsibilities: ["Effectively coded software changes and alterations based on specific design specifications.",
@@ -218,7 +192,7 @@ export const info = {
       company: "Include Technology",
       designation: "iOS Engineer",
       location: "Pune",
-      duration: "March 2021 - Sept 2021",
+      duration: "Mar 2021 - Sep 2021",
       achievement: "",
       isWork: true,
       responsibilities: ["Served as a friendly, hardworking, and punctual employee.",
@@ -257,7 +231,7 @@ export const info = {
       company: "Include Technology",
       designation: "iOS Engineer",
       location: "Pune",
-      duration: "March 2016 - April 2019",
+      duration: "Mar 2016 - Apr 2019",
       achievement: "",
       isWork: true,
       responsibilities: ["Served as a friendly, hardworking, and punctual employee.",
@@ -270,7 +244,7 @@ export const info = {
       company: "Mindstix Software Pvt. Ltd.",
       designation: "Accelerated Intern",
       location: "Pune",
-      duration: "Sept 2015 - Feb 2016",
+      duration: "Sep 2015 - Feb 2016",
       achievement: "",
       isWork: true,
       responsibilities: ["Served as a dedicated and supportive Intern in a fast-paced environment.",
