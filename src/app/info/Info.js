@@ -120,6 +120,10 @@ export const info = {
       image: "/typescript.svg"
     },
     {
+      name: "Tailwind CSS",
+      image: "/tailwind.svg"
+    },
+    {
       name: "VS Code",
       image: "/vs-code.svg"
     },
