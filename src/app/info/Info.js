@@ -25,28 +25,6 @@ of what each of the values mean.
  */
 
 export const info = {
-  firstName: "Rushikesh",
-  lastName: "Pandit",
-  initials: "RP", // the example uses first and last, but feel free to use three or more if you like.
-  position: "a Full Stack Developer",
-  // selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
-  gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
-  baseColor: colors[0],
-  miniBio: [
-    // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
-    {
-      emoji: "🌎",
-      text: "based in the INDIA",
-    },
-    {
-      emoji: "💼",
-      text: "Senior Software Engineer at FIS",
-    },
-    {
-      emoji: "📧",
-      text: "rushikesh.d.pandit@gmail.com",
-    },
-  ],
   socials: [
     {
       link: "https://github.com/rushikeshpandit",
@@ -142,55 +120,13 @@ export const info = {
       image: "/xcode.svg"
     },
   ],
-  // portfolio: [
-  //   // This is where your portfolio projects will be detailed
-
-  //   {
-  //     title: "VS Code extension",
-  //     source: "https://github.com/rushikeshpandit/vs-code-extn-rn-template",
-  //     images: [vs_code_extension],
-  //     info: "This extension helps user to generate a boilerplate code in plain Javascript for redux-toolkit with saga integration",
-  //     live: "https://marketplace.visualstudio.com/items?itemName=RushikeshPandit.redux-toolkit-saga-boilerplate"
-  //   },
-  //   {
-  //     title: "VS Code extension",
-  //     source: "https://github.com/rushikeshpandit/vs-code-extn-rn-ts-template",
-  //     images: [vs_code_extension],
-  //     info: "This extension helps user to generate a boilerplate code in Typescript for redux-toolkit with saga integration",
-  //     live: "https://marketplace.visualstudio.com/items?itemName=RushikeshPandit.redux-toolkit-saga-typescript-boilerplate"
-  //   },
-  //   {
-  //     title: "Redux tool kit demo",
-  //     source: "https://github.com/rushikeshpandit/redux_toolkit_demo",
-  //     images: [redux_toolkit_demo],
-  //     info: "Todo list application with redux toolkit implementation.",
-  //   },
-  //   {
-  //     title: "Expenses Tracker",
-  //     source: "https://github.com/rushikeshpandit/expense_tracker",
-  //     images: [expenses_tracker],
-  //     info: "This is Spring Boot application which is used to track expenses of user.",
-  //   },
-  //   {
-  //     title: "Weather App",
-  //     source: "https://github.com/rushikeshpandit/weather_app",
-  //     images: [weather_one, weather_two, weather_three],
-  //     info: "This is Flutter application which can fetch the current location and display the weather accordingly.",
-  //   },
-  //   {
-  //     title: "BMI Calculator",
-  //     source: "https://github.com/rushikeshpandit/BMI_calculator",
-  //     images: [bmi_1, bmi_2],
-  //     info: "This simple application allows user to calculate BMI once user inputs his weight and height.\nThis app has been written in Flutter language.",
-  //   },
-  // ],
   experience: [
     {
       company: "FIS Global",
       designation: "Senior Software Engineer",
       location: "Bangalore",
       duration: "Sep-2021 - Present",
-      achievement: "",
+      achievement: [],
       isWork: true,
       responsibilities: ["Effectively coded software changes and alterations based on specific design specifications.",
         "Implemented and updated application modules under the direction of Senior Software Developers.",
@@ -202,7 +138,7 @@ export const info = {
       designation: "iOS Engineer",
       location: "Pune",
       duration: "Mar 2021 - Sep 2021",
-      achievement: "",
+      achievement: [],
       isWork: true,
       responsibilities: ["Served as a friendly, hardworking, and punctual employee.",
         "Worked well independently and on a team to solve problems.",
@@ -215,7 +151,7 @@ export const info = {
       location: "Pune",
       duration: "Feb 2020 - Feb 2021",
       achievement:
-        "Got an Magnificient Multitasker award for contributing to multiple projects",
+        ["Got an Magnificient Multitasker award for contributing to multiple projects"],
       isWork: true,
       responsibilities: ["Implemented and updated application modules under the direction of Senior Software Developers / CTO.",
         "Effectively coded software changes and alterations based on specific design specifications.",
@@ -228,7 +164,7 @@ export const info = {
       designation: "Associate Manager - iOS Development",
       location: "Pune",
       duration: "May 2019 - Jan 2020",
-      achievement: "",
+      achievement: [],
       isWork: true,
       responsibilities: ["Provided optimal assistance to the General Manager and handled a variety of tasks.",
         "Worked on 4+ apps written in Swift.",
@@ -241,7 +177,7 @@ export const info = {
       designation: "iOS Engineer",
       location: "Pune",
       duration: "Mar 2016 - Apr 2019",
-      achievement: "",
+      achievement: [],
       isWork: true,
       responsibilities: ["Served as a friendly, hardworking, and punctual employee.",
         "Worked well independently and on a team to solve problems.",
@@ -254,7 +190,7 @@ export const info = {
       designation: "Accelerated Intern",
       location: "Pune",
       duration: "Sep 2015 - Feb 2016",
-      achievement: "",
+      achievement: [],
       isWork: true,
       responsibilities: ["Served as a dedicated and supportive Intern in a fast-paced environment.",
         "Was part of iPad team which was working for one of the e-commerce giant  in US and Canada.",
