@@ -30,7 +30,7 @@ export default function Professional() {
                 <p className="text-[#018C0F]">Full Time</p>
               </div>
             </div>
-            <div key={data.duration} className="  flex items-center justify-between">
+            <div key={data.duration} className="flex items-center justify-between">
               <div className="flex-row flex justify-between">
                 <div className="h-6 w-80 items-center justify-between flex">
                   {renderIcons(iconTypes.office)}
@@ -46,14 +46,30 @@ export default function Professional() {
                 <p className="text-[#A7A7A7] mx-4 font-light text-xl text-left">{data.duration}</p>
               </div>
             </div>
+            {data.achievement.length > 0 && (
+              <div key={data.duration} className=" mt-4 flex items-left justify-between flex-col">
+                <p className="text-[#666666] font-normal text-base">Achivements</p>
+                <ul className="pt-2">
+                  {data.achievement.map(achieve => (
+                    <li key={achieve} className="text-[#A7A7A7] mx-4 font-light text-xm text-left">
+                      {'\u2022'} {achieve}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {data.responsibilities && (
-              <ul className="pt-5">
-                {data.responsibilities.map(responsibility => (
-                  <li key={responsibility} className="text-[#A7A7A7] mx-4 font-light text-xm text-left">
-                    {'\u2022'} {responsibility}
-                  </li>
-                ))}
-              </ul>
+              <div key={data.duration} className="mt-4 flex items-left justify-between flex-col">
+                <p className="text-[#666666] font-normal text-base">Responsibilities</p>
+                <ul className="pt-2">
+                  {data.responsibilities.map(responsibility => (
+                    <li key={responsibility} className="text-[#A7A7A7] mx-4 font-light text-xm text-left">
+                      {'\u2022'} {responsibility}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             )}
             <div className="border-b-2 mt-4"></div>
           </div>
@@ -81,6 +97,19 @@ export default function Professional() {
                 <p className="text-[#A7A7A7] mx-4 font-light text-xl text-left">{data.duration}</p>
               </div>
             </div>
+            {data.achievement.length > 0 && (
+              <div key={data.duration} className=" mt-4 flex items-left justify-between flex-col">
+                <p className="text-[#666666] font-normal text-base">Achivements</p>
+                <ul className="pt-2">
+                  {data.achievement.map(achieve => (
+                    <li key={achieve} className="text-[#A7A7A7] mx-4 font-light text-xm text-left">
+                      {'\u2022'} {achieve}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            <div className="border-b-2 mt-4"></div>
           </div>
         ) : (
           <></>
