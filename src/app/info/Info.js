@@ -52,6 +52,10 @@ export const info = {
   bio: "Welcome to my corner of the digital world! I'm a Computer Application post-graduate with a passion for programming. Over the past 8+ years, I've dedicated myself to the dynamic realm of Mobile Application development, crafting unique user experiences.\n\nMy forte lies in crafting intricate user interfaces using Swift, SwiftUI, and React Native.I also possess a foundational understanding of Android, Flutter, Spring Boot, Elixir, and the Phoenix framework, expanding my technological toolkit.\n\nIn addition to my development skills, I'm well-versed in the world of Continuous Integration and Continuous Deployment, leveraging tools like CircleCI, Bitrise, and Fastlane to streamline the development process.\n\nMy track record speaks for itself: I've had the privilege of working on over 10 iOS apps and 5 React Native applications, spanning diverse domains such as Banking, Social Media, and Messaging. I'm well- acquainted with the entire application lifecycle, from conception to deployment.\n\nBut what truly sets me apart is my insatiable appetite for learning.Technology evolves rapidly, and I relish every opportunity to embrace new innovations and stay ahead of the curve.\n\nIf you're seeking a dedicated and adaptable mobile app developer who's ready to tackle your next challenge, look no further.Consider bringing my passion, experience, and expertise to your team.Let's create something extraordinary together",
   techStack: [
     {
+      name: "Android Studio",
+      image: "/android-studio.svg"
+    },
+    {
       name: "CircleCI",
       image: "/circleci.svg"
     },
