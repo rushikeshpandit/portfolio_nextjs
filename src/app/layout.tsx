@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import {Poppins} from 'next/font/google';
 import './globals.css';
 import Navigation from './components/navigation';
+import {Analytics} from '@vercel/analytics/react';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -19,6 +20,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <body className={poppins.className}>
         <Navigation />
         {children}
+        <Analytics />
       </body>
     </html>
   );
