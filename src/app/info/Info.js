@@ -164,7 +164,7 @@ export const info = {
         "Was responsible for mobile app written in React Native. My roles and responsibilities includes handling client interaction, requirement gathering, sprint planning and execution and deployment."]
     },
     {
-      company: "Destek Infololutions",
+      company: "Destek Infosolutions",
       designation: "Associate Manager - iOS Development",
       location: "Pune",
       duration: "May 2019 - Jan 2020",
