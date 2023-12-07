@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function TechStack() {
   return (
-    <main>
-      <div className="pt-10 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
+    <div id="techstack">
+      <div className="pt-16 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
         <h2 className="text-[#42446E]  font-bold, text-5xl">My Tech Stack</h2>
         <h3 className="text-[#666666]  font-bold, text-xl pt-10 pb-10">
           Technologies I&apos;ve been working with recently
@@ -18,6 +18,6 @@ export default function TechStack() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

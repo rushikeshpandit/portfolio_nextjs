@@ -119,13 +119,13 @@ export default function Professional() {
   );
 
   return (
-    <main>
-      <div className="pt-10 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
+    <div id="professional">
+      <div className="pt-16 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
         <h2 className="text-[#42446E]  font-bold, text-5xl">Work Experience</h2>
         {renderTimeline()}
         <h2 className="text-[#42446E]  font-bold, text-5xl">Education</h2>
         {renderTimeline(false)}
       </div>
-    </main>
+    </div>
   );
 }

@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function Contact() {
   return (
-    <main>
-      <div className="pt-10 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
+    <div id="contact">
+      <div className="pt-16 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
         <h2 className="text-[#42446E]  font-bold, text-5xl">Connect with me</h2>
         <div className="p-10 h-auto w-auto mx-auto flex flex-wrap items-center justify-center">
           {info.socials.map(({link, icon, label}) => (
@@ -17,6 +17,6 @@ export default function Contact() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <div id="home">
       <div className="md:hidden h-screen w-screen container my-auto mx-auto bg-white items-center justify-evenly flex  flex-col">
         {renderImage() /** This is for smaller screen */}
         {renderText()}
@@ -39,6 +39,6 @@ export default function Home() {
         {renderText() /** This is for bigger screen */}
         {renderImage(true)}
       </div>
-    </main>
+    </div>
   );
 }
