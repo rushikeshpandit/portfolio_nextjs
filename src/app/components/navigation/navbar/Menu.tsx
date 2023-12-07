@@ -1,34 +1,34 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+import ScrollLink from '../../scrolllink/ScrollLink';
 export const Menu = ({toggle}: {toggle: () => void}) => {
   return (
     <>
       <ul className="hidden md:flex gap-x-6 text-white ">
         <li>
-          <Link href="/home">
+          <ScrollLink href="#home">
             <p className="text-[#666666]">Home</p>
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="/about">
+          <ScrollLink href="#about">
             <p className="text-[#666666]">About</p>
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="/techstack">
+          <ScrollLink href="#techstack">
             <p className="text-[#666666]">Tech Stack</p>
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="/professional">
+          <ScrollLink href="#professional">
             <p className="text-[#666666]">Professional Experience</p>
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="/contact">
+          <ScrollLink href="#contact">
             <p className="text-[#666666]">Contact</p>
-          </Link>
+          </ScrollLink>
         </li>
         <li>
           <Link href="https://github.com/rushikeshpandit" target="_blank" rel="noopener noreferrer">
