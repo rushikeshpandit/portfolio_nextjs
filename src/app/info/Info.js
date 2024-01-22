@@ -218,4 +218,16 @@ export const info = {
       isWork: false,
     },
   ],
+  sideProjects: [
+    {
+      name: "Redux Toolkit Saga Boilerplate",
+      link: "https://marketplace.visualstudio.com/items?itemName=RushikeshPandit.redux-toolkit-saga-boilerplate",
+      description: "The \"Redux Toolkit Saga Boilerplate\" is a VS Code extension designed to simplify the process of creating React Native projects with Redux Toolkit and Saga implementation. It streamlines the initial setup by providing developers with a basic boilerplate code structure. This means developers can start working on their React Native applications without the hassle of manually configuring the underlying Redux Toolkit and Saga setup."
+    },
+    {
+      name: "Redux Toolkit Saga TypeScript Boilerplate",
+      link: "https://marketplace.visualstudio.com/items?itemName=RushikeshPandit.redux-toolkit-saga-typescript-boilerplate",
+      description: "The \"Redux Toolkit Saga Typescript Boilerplate\" is a Visual Studio Code extension designed to streamline the process of creating React Native projects with Redux Toolkit implementation. It aims to simplify and accelerate the initial setup for developers by providing a comprehensive boilerplate codebase. With this extension, developers can kickstart their projects without the need to manually configure the underlying Redux and Saga implementations."
+    }
+  ],
 };
