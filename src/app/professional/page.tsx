@@ -32,8 +32,12 @@ export default function Professional() {
           <p className="text-[#666666] my-4 font-normal text-2xl">Description</p>
           <p className="text-[#A7A7A7] my-4 mx-4 font-light text-xl text-left">{project.description}</p>
 
-          <Link href={project.link}>
-            <p className="text-[#666666] my-4 font-normal text-2xl">Download Link</p>
+          <Link href={project.link} rel="noopener noreferrer" target="_blank">
+            {project.isWebsite ? (
+              <p className="text-[#666666] my-4 font-normal text-2xl">Visit Website</p>
+            ) : (
+              <p className="text-[#666666] my-4 font-normal text-2xl">Download Link</p>
+            )}
           </Link>
         </div>
       ))}
