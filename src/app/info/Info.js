@@ -49,7 +49,7 @@ export const info = {
     // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
     // Just change the links so that they lead to your social profiles.
   ],
-  bio: "Welcome to my corner of the digital world! I'm a Computer Application post-graduate with a passion for programming. Over the past 8+ years, I've dedicated myself to the dynamic realm of Mobile Application development, crafting unique user experiences.\n\nMy forte lies in crafting intricate user interfaces using Swift, SwiftUI, and React Native.I also possess a foundational understanding of Android, Flutter, Spring Boot, Elixir, and the Phoenix framework, expanding my technological toolkit.\n\nIn addition to my development skills, I'm well-versed in the world of Continuous Integration and Continuous Deployment, leveraging tools like CircleCI, Bitrise, and Fastlane to streamline the development process.\n\nMy track record speaks for itself: I've had the privilege of working on over 10 iOS apps and 5 React Native applications, spanning diverse domains such as Banking, Social Media, and Messaging. I'm well- acquainted with the entire application lifecycle, from conception to deployment.\n\nBut what truly sets me apart is my insatiable appetite for learning.Technology evolves rapidly, and I relish every opportunity to embrace new innovations and stay ahead of the curve.\n\nIf you're seeking a dedicated and adaptable mobile app developer who's ready to tackle your next challenge, look no further.Consider bringing my passion, experience, and expertise to your team.Let's create something extraordinary together",
+  bio: "Welcome to my corner of the digital world! I'm a Computer Application post-graduate with a passion for programming. Over the past 9+ years, I've dedicated myself to the dynamic realm of Mobile Application development, crafting unique user experiences.\n\nMy forte lies in crafting intricate user interfaces using Swift, SwiftUI, and React Native.I also possess a foundational understanding of Android, Flutter, Spring Boot, Elixir, and the Phoenix framework, expanding my technological toolkit.\n\nIn addition to my development skills, I'm well-versed in the world of Continuous Integration and Continuous Deployment, leveraging tools like CircleCI, Bitrise, and Fastlane to streamline the development process.\n\nMy track record speaks for itself: I've had the privilege of working on over 10 iOS apps and 5 React Native applications, spanning diverse domains such as Banking, Social Media, and Messaging. I'm well- acquainted with the entire application lifecycle, from conception to deployment.\n\nBut what truly sets me apart is my insatiable appetite for learning.Technology evolves rapidly, and I relish every opportunity to embrace new innovations and stay ahead of the curve.\n\nIf you're seeking a dedicated and adaptable mobile app developer who's ready to tackle your next challenge, look no further.Consider bringing my passion, experience, and expertise to your team.Let's create something extraordinary together",
   techStack: [
     {
       name: "Android Studio",
@@ -222,12 +222,20 @@ export const info = {
     {
       name: "Redux Toolkit Saga Boilerplate",
       link: "https://marketplace.visualstudio.com/items?itemName=RushikeshPandit.redux-toolkit-saga-boilerplate",
-      description: "The \"Redux Toolkit Saga Boilerplate\" is a VS Code extension designed to simplify the process of creating React Native projects with Redux Toolkit and Saga implementation. It streamlines the initial setup by providing developers with a basic boilerplate code structure. This means developers can start working on their React Native applications without the hassle of manually configuring the underlying Redux Toolkit and Saga setup."
+      description: "The \"Redux Toolkit Saga Boilerplate\" is a VS Code extension designed to simplify the process of creating React Native projects with Redux Toolkit and Saga implementation. It streamlines the initial setup by providing developers with a basic boilerplate code structure. This means developers can start working on their React Native applications without the hassle of manually configuring the underlying Redux Toolkit and Saga setup.",
+      isWebsite: false
     },
     {
       name: "Redux Toolkit Saga TypeScript Boilerplate",
       link: "https://marketplace.visualstudio.com/items?itemName=RushikeshPandit.redux-toolkit-saga-typescript-boilerplate",
-      description: "The \"Redux Toolkit Saga Typescript Boilerplate\" is a Visual Studio Code extension designed to streamline the process of creating React Native projects with Redux Toolkit implementation. It aims to simplify and accelerate the initial setup for developers by providing a comprehensive boilerplate codebase. With this extension, developers can kickstart their projects without the need to manually configure the underlying Redux and Saga implementations."
+      description: "The \"Redux Toolkit Saga Typescript Boilerplate\" is a Visual Studio Code extension designed to streamline the process of creating React Native projects with Redux Toolkit implementation. It aims to simplify and accelerate the initial setup for developers by providing a comprehensive boilerplate codebase. With this extension, developers can kickstart their projects without the need to manually configure the underlying Redux and Saga implementations.",
+      isWebsite: false
+    },
+    {
+      name: "iOS app privacy generator",
+      link: "https://ios-app-privacy.vercel.app",
+      description: "The \"iOS app privacy generator\" is a tool which lets you to generate a \"PrivacyInfo.xcprivacy\" file seamlessly without which apple will reject your application.",
+      isWebsite: true
     }
   ],
 };
