@@ -12,7 +12,7 @@ export default function TechStack() {
         <div className="p-10 h-auto w-auto mx-auto flex flex-wrap">
           {info.techStack.map(({name, image}) => (
             <div key={name} className="w-[200px] h-[160px] flex-col flex items-center justify-center">
-              <Image src={image} alt={name} width={80} height={80} />
+              <Image src={image} alt={name} width={80} height={80} className="h-20 w-20"/>
               <p className="text-[#666666] m-4">{name}</p>
             </div>
           ))}
