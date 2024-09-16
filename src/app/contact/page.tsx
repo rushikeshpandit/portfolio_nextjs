@@ -11,7 +11,7 @@ export default function Contact() {
           {info.socials.map(({link, icon, label}) => (
             <div key={label} className="w-18 h-18 m-12 items-center justify-center">
               <Link href={link}>
-                <Image src={icon} alt={label} width={80} height={80} />
+                <Image src={icon} alt={label} width={80} height={80} className="h-20 w-20" />
               </Link>
             </div>
           ))}
