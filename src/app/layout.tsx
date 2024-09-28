@@ -7,6 +7,7 @@ import Home from './home/page';
 import About from './about/page';
 import TechStack from './techstack/page';
 import Professional from './professional/page';
+import SideProjects from './sideProjects/page';
 import Contact from './contact/page';
 
 const poppins = Poppins({
@@ -24,7 +25,12 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     <html lang="en">
       <body className={poppins.className}>
         <Navigation />
-        {children}
+        <Home />
+        <About />
+        <TechStack />
+        <Professional />
+        <SideProjects />
+        <Contact />
         <Analytics />
       </body>
     </html>
