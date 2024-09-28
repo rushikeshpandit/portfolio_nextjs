@@ -1,13 +1,3 @@
-// import self from "/self.png";
-// import bmi_1 from "/BMI_Calculator_1.png";
-// import bmi_2 from "/BMI_Calculator_2.png";
-// import expenses_tracker from "/expenses_tracker.png";
-// import weather_one from "/weather_one.png";
-// import weather_two from "/weather_two.png";
-// import weather_three from "/weather_three.png";
-// import redux_toolkit_demo from "/redux_toolkit_demo.png";
-// import vs_code_extension from "/vs_code_extension.png"
-
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
 
@@ -25,6 +15,32 @@ of what each of the values mean.
  */
 
 export const info = {
+  nav_menu: [
+    {
+      link:"home",
+      title:"Home"
+    },
+    {
+      link:"about",
+      title:"About"
+    },
+    {
+      link:"techstack",
+      title:"Tech Stack"
+    },
+    {
+      link:"professional",
+      title:"Professional Experience"
+    },
+    {
+      link:"sideprojects",
+      title:"Side Projects"
+    },
+    {
+      link:"contact",
+      title:"Contact"
+    }
+  ],
   socials: [
     {
       link: "https://github.com/rushikeshpandit",

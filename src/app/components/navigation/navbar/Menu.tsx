@@ -1,34 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
-export const Menu = ({toggle}: {toggle: () => void}) => {
+import {info} from '@/app/info/Info';
+export const Menu = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+    window.scroll({top: element.offsetTop - 20, behavior: 'smooth'});
+  };
+
   return (
     <>
       <ul className="hidden md:flex gap-x-6 text-white ">
-        <li>
-          <Link href="/home">
-            <p className="text-[#666666]">Home</p>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            <p className="text-[#666666]">About</p>
-          </Link>
-        </li>
-        <li>
-          <Link href="/techstack">
-            <p className="text-[#666666]">Tech Stack</p>
-          </Link>
-        </li>
-        <li>
-          <Link href="/professional">
-            <p className="text-[#666666]">Professional Experience</p>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <p className="text-[#666666]">Contact</p>
-          </Link>
-        </li>
+        {info.nav_menu.map((item, index) => (
+          <li key={index}>
+            <button onClick={() => scrollToSection(item.link)}>
+              <p className="text-[#666666]">{item.title}</p>
+            </button>
+          </li>
+        ))}
+
         <li>
           <Link href="https://github.com/rushikeshpandit" target="_blank" rel="noopener noreferrer">
             <Image src="/logo-github.svg" alt="github" width={'25'} height={'25'} className="relative" />
