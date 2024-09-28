@@ -13,7 +13,7 @@ export const Navbar = ({toggle}: {toggle: () => void}) => {
                 <path fill="#000" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
               </svg>
             </button>
-            <Menu toggle={toggle} />
+            <Menu />
           </div>
         </div>
       </div>
