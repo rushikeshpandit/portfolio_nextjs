@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <div id="home">
+    <div id="home" className="h-screen w-screen justify-center items-center">
       <div className="md:hidden h-screen w-screen container my-auto mx-auto bg-white items-center justify-evenly flex  flex-col">
         {renderImage() /** This is for smaller screen */}
         {renderText()}
