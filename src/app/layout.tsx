@@ -3,6 +3,7 @@ import {Poppins} from 'next/font/google';
 import './globals.css';
 import Navigation from './components/navigation';
 import {Analytics} from '@vercel/analytics/react';
+import {SpeedInsights} from '@vercel/speed-insights/next';
 import Home from './home/page';
 import About from './about/page';
 import TechStack from './techstack/page';
@@ -32,6 +33,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <SideProjects />
         <Contact />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
