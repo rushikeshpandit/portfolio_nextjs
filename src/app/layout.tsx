@@ -4,14 +4,15 @@ import './globals.css';
 import Navigation from './components/navigation';
 import {Analytics} from '@vercel/analytics/react';
 import {SpeedInsights} from '@vercel/speed-insights/next';
-import Home from './home/page';
-import About from './about/page';
-import TechStack from './techstack/page';
-import Professional from './professional/page';
-import SideProjects from './sideProjects/page';
-import Contact from './contact/page';
 import styles from './styles.module.css';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+const Home = dynamic(() => import('./home/page'));
+const About = dynamic(() => import('./about/page'));
+const TechStack = dynamic(() => import('./techstack/page'));
+const Professional = dynamic(() => import('./professional/page'));
+const SideProjects = dynamic(() => import('./sideProjects/page'));
+const Contact = dynamic(() => import('./contact/page'));
 
 const poppins = Poppins({
   subsets: ['latin'],

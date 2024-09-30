@@ -20,7 +20,7 @@ export const Menu = () => {
         ))}
 
         <li>
-          <Link href="https://github.com/rushikeshpandit" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/rushikeshpandit" target="_blank" rel="noopener noreferrer" prefetch={false}>
             <Image src="/logo-github.svg" alt="github" width={'25'} height={'25'} className="relative" />
           </Link>
         </li>
@@ -28,7 +28,8 @@ export const Menu = () => {
           <Link
             href="https://www.linkedin.com/in/rushikesh-pandit-646834100/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            prefetch={false}>
             <Image src="/logo-linkedin.svg" alt="linkedin" width={'25'} height={'25'} className="relative" />
           </Link>
         </li>

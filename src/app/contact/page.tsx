@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="p-10 h-auto w-auto mx-auto flex flex-wrap items-center justify-center">
           {info.socials.map(({link, icon, label}) => (
             <div key={label} className="w-18 h-18 m-12 items-center justify-center">
-              <Link href={link}>
+              <Link href={link} prefetch={false}>
                 <Image src={icon} alt={label} width={80} height={80} className="h-20 w-20" />
               </Link>
             </div>
