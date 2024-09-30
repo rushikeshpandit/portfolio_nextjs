@@ -21,27 +21,27 @@ const Sidebar = ({isOpen, toggle}: {isOpen: boolean; toggle: () => void}): JSX.E
 
         <ul className="sidebar-nav text-center leading-relaxed text-xl">
           <li>
-            <Link href="/home" onClick={toggle}>
+            <Link href="/home" onClick={toggle} prefetch={false}>
               <p className="text-[#666666]">Home</p>
             </Link>
           </li>
           <li>
-            <Link href="/about" onClick={toggle}>
+            <Link href="/about" onClick={toggle} prefetch={false}>
               <p className="text-[#666666]">About</p>
             </Link>
           </li>
           <li>
-            <Link href="/techstack" onClick={toggle}>
+            <Link href="/techstack" onClick={toggle} prefetch={false}>
               <p className="text-[#666666]">Tech Stack</p>
             </Link>
           </li>
           <li>
-            <Link href="/professional" onClick={toggle}>
+            <Link href="/professional" onClick={toggle} prefetch={false}>
               <p className="text-[#666666]">Professional Experience</p>
             </Link>
           </li>
           <li>
-            <Link href="/contact" onClick={toggle}>
+            <Link href="/contact" onClick={toggle} prefetch={false}>
               <p className="text-[#666666]">Contact</p>
             </Link>
           </li>

@@ -34,7 +34,7 @@ const Logo = () => {
 
   return (
     <>
-      <Link href="/" style={{display: showButton ? 'none' : 'block'}}>
+      <Link href="/" style={{display: showButton ? 'none' : 'block'}} prefetch={false}>
         <Image src="/logo-dark.svg" alt="Logo" width={'35'} height={'35'} className="relative" />
       </Link>
     </>
