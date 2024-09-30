@@ -10,6 +10,8 @@ import TechStack from './techstack/page';
 import Professional from './professional/page';
 import SideProjects from './sideProjects/page';
 import Contact from './contact/page';
+import styles from './styles.module.css';
+import Image from 'next/image';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -32,6 +34,11 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <Professional />
         <SideProjects />
         <Contact />
+        <div className={styles.floatingbuttondiv}>
+          <a className={styles.fb} href="/Rushikesh_resume.pdf" target="_blank" rel="noopener noreferrer" download={true}>
+            <Image src={'/downloadpdf.svg'} alt={"downloadpdf"} width={50} height={50} className="h-14 w-14" />
+          </a>
+        </div>
         <Analytics />
         <SpeedInsights />
       </body>
