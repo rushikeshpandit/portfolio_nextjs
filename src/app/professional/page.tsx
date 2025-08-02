@@ -21,17 +21,20 @@ export default function Professional() {
   };
 
   const renderTimeline = (isWork: boolean = true) => (
-    <div className="h-auto w-auto flex flex-wrap flex-col">
+    <div className=" h-auto container my-auto mx-auto bg-white items-center justify-evenly">
       {info.experience.map(data =>
         data.isWork === isWork && data.isWork ? (
-          <div key={data.duration} className="w-auto h-18 m-12 flex-col flex justify-center">
-            <div key={data.duration} className="  flex items-center justify-between ">
+          <div
+            key={`${data.duration}+${data.designation}`}
+            id={data.duration}
+            className="w-auto m-12 flex-col flex justify-center">
+            <div className="  flex items-center justify-between ">
               <p className="text-[#666666] font-normal text-2xl">{data.designation}</p>
               <div className="bg-[#D7FFE0]  h-6 w-28 rounded-full justify-center flex">
                 <p className="text-[#018C0F]">Full Time</p>
               </div>
             </div>
-            <div key={data.duration} className="flex items-center justify-between">
+            <div key={`${data.designation}+${data.duration}`} className="flex items-center justify-between">
               <div className="flex-row flex justify-between">
                 <div className="h-6 w-80 items-center justify-between flex">
                   {renderIcons(iconTypes.office)}
@@ -48,7 +51,7 @@ export default function Professional() {
               </div>
             </div>
             {data.achievement.length > 0 && (
-              <div key={data.duration} className=" mt-4 flex items-left justify-between flex-col">
+              <div className=" mt-4 flex items-left justify-between flex-col">
                 <p className="text-[#666666] font-normal text-base">Achivements</p>
                 <ul className="pt-2">
                   {data.achievement.map(achieve => (
@@ -61,7 +64,7 @@ export default function Professional() {
             )}
 
             {data.responsibilities && (
-              <div key={data.duration} className="mt-4 flex items-left justify-between flex-col">
+              <div className="mt-4 flex items-left justify-between flex-col">
                 <p className="text-[#666666] font-normal text-base">Responsibilities</p>
                 <ul className="pt-2">
                   {data.responsibilities.map(responsibility => (
@@ -75,14 +78,14 @@ export default function Professional() {
             <div className="border-b-2 mt-4"></div>
           </div>
         ) : data.isWork === isWork && !data.isWork ? (
-          <div key={data.duration} className=" w-auto h-18 m-12 flex-col flex justify-center">
-            <div key={data.duration} className="  flex items-center justify-between ">
+          <div key={data.duration} className=" w-auto m-12 flex-col flex justify-center">
+            <div className="  flex items-center justify-between ">
               <p className="text-[#666666] font-normal text-2xl">{data.degree}</p>
               <div className="bg-[#D7FFE0]  h-6 w-28 rounded-full justify-center flex">
                 <p className="text-[#018C0F]">Full Time</p>
               </div>
             </div>
-            <div key={data.duration} className="  flex items-center justify-between">
+            <div key={data.degree} className="  flex items-center justify-between">
               <div className="flex-row flex justify-between">
                 <div className="h-6 w-80 items-center justify-between flex">
                   {renderIcons(iconTypes.office)}
@@ -99,7 +102,7 @@ export default function Professional() {
               </div>
             </div>
             {data.achievement.length > 0 && (
-              <div key={data.duration} className=" mt-4 flex items-left justify-between flex-col">
+              <div className=" mt-4 flex items-left justify-between flex-col">
                 <p className="text-[#666666] font-normal text-base">Achivements</p>
                 <ul className="pt-2">
                   {data.achievement.map(achieve => (
@@ -121,7 +124,7 @@ export default function Professional() {
 
   return (
     <div id="professional">
-      <div className="pt-16 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
+      <div className="pt-16 h-auto container my-auto mx-auto bg-white items-center justify-evenly">
         <h2 className="text-[#42446E]  font-bold, text-5xl">Work Experience</h2>
         {renderTimeline()}
         <h2 className="text-[#42446E]  font-bold, text-5xl">Education</h2>

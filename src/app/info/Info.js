@@ -17,28 +17,28 @@ of what each of the values mean.
 export const info = {
   nav_menu: [
     {
-      link:"home",
-      title:"Home"
+      link: "home",
+      title: "Home"
     },
     {
-      link:"about",
-      title:"About"
+      link: "about",
+      title: "About"
     },
     {
-      link:"techstack",
-      title:"Tech Stack"
+      link: "techstack",
+      title: "Tech Stack"
     },
     {
-      link:"professional",
-      title:"Professional Experience"
+      link: "professional",
+      title: "Professional Experience"
     },
     {
-      link:"sideprojects",
-      title:"Side Projects"
+      link: "sideprojects",
+      title: "Side Projects"
     },
     {
-      link:"contact",
-      title:"Contact"
+      link: "contact",
+      title: "Contact"
     }
   ],
   socials: [
@@ -66,80 +66,104 @@ export const info = {
     // Just change the links so that they lead to your social profiles.
   ],
   bio: "Welcome to my corner of the digital world! I'm a Computer Application post-graduate with a passion for programming. Over the past 9+ years, I've dedicated myself to the dynamic realm of Mobile Application development, crafting unique user experiences.\n\nMy forte lies in crafting intricate user interfaces using Swift, SwiftUI, and React Native.I also possess a foundational understanding of Android, Flutter, Spring Boot, Elixir, and the Phoenix framework, expanding my technological toolkit.\n\nIn addition to my development skills, I'm well-versed in the world of Continuous Integration and Continuous Deployment, leveraging tools like CircleCI, Bitrise, and Fastlane to streamline the development process.\n\nMy track record speaks for itself: I've had the privilege of working on over 10 iOS apps and 5 React Native applications, spanning diverse domains such as Banking, Social Media, and Messaging. I'm well- acquainted with the entire application lifecycle, from conception to deployment.\n\nBut what truly sets me apart is my insatiable appetite for learning.Technology evolves rapidly, and I relish every opportunity to embrace new innovations and stay ahead of the curve.\n\nIf you're seeking a dedicated and adaptable mobile app developer who's ready to tackle your next challenge, look no further.Consider bringing my passion, experience, and expertise to your team.Let's create something extraordinary together",
-  techStack: [
-    {
-      name: "Android Studio",
-      image: "/android-studio.svg"
+  techStack: {
+    tools: [{
+      title: "Languages, Frameworks",
+      items: [
+        {
+          name: "Elixir",
+          image: "/elixir.svg"
+        },
+        {
+          name: "Flutter",
+          image: "/flutter.svg"
+        },
+        {
+          name: "JavaScript",
+          image: "/javascript.svg"
+        },
+        {
+          name: "Next.js",
+          image: "/nextjs.svg"
+        },
+        {
+          name: "Node.js",
+          image: "/nodejs.svg"
+        },
+        {
+          name: "Phoenix Framework",
+          image: "/phoenix.svg"
+        },
+        {
+          name: "React",
+          image: "/react.svg"
+        },
+        {
+          name: "Spring",
+          image: "/spring.svg"
+        },
+        {
+          name: "Swift",
+          image: "/swift.svg"
+        },
+        {
+          name: "TypeScript",
+          image: "/typescript.svg"
+        },
+        {
+          name: "Tailwind CSS",
+          image: "/tailwind.svg"
+        },
+      ]
     },
     {
-      name: "CircleCI",
-      image: "/circleci.svg"
+      title: "IDE",
+      items: [
+        {
+          name: "Android Studio",
+          image: "/android-studio.svg"
+        },
+        {
+          name: "VS Code",
+          image: "/vs-code.svg"
+        },
+        {
+          name: "Xcode",
+          image: "/xcode.svg"
+        },
+      ]
     },
     {
-      name: "Elixir",
-      image: "/elixir.svg"
+      title: "DevOps",
+      items: [
+        {
+          name: "CircleCI",
+          image: "/circleci.svg"
+        },
+
+        {
+          name: "Fastlane",
+          image: "/fastlane.svg"
+        },
+      ]
     },
     {
-      name: "Fastlane",
-      image: "/fastlane.svg"
-    },
-    {
-      name: "Firebase",
-      image: "/firebase.svg"
-    },
-    {
-      name: "Flutter",
-      image: "/flutter.svg"
-    },
-    {
-      name: "GIT",
-      image: "/git.svg"
-    },
-    {
-      name: "JavaScript",
-      image: "/javascript.svg"
-    },
-    {
-      name: "Next.js",
-      image: "/nextjs.svg"
-    },
-    {
-      name: "Node.js",
-      image: "/nodejs.svg"
-    },
-    {
-      name: "Phoenix Framework",
-      image: "/phoenix.svg"
-    },
-    {
-      name: "React",
-      image: "/react.svg"
-    },
-    {
-      name: "Spring",
-      image: "/spring.svg"
-    },
-    {
-      name: "Swift",
-      image: "/swift.svg"
-    },
-    {
-      name: "TypeScript",
-      image: "/typescript.svg"
-    },
-    {
-      name: "Tailwind CSS",
-      image: "/tailwind.svg"
-    },
-    {
-      name: "VS Code",
-      image: "/vs-code.svg"
-    },
-    {
-      name: "Xcode",
-      image: "/xcode.svg"
-    },
-  ],
+      title: "Other Tools",
+      items: [
+        {
+          name: "Firebase",
+          image: "/firebase.svg"
+        },
+
+        {
+          name: "GIT",
+          image: "/git.svg"
+        },
+      ]
+    }
+    ]
+
+  },
   experience: [
     {
       company: "FIS Global",
@@ -179,7 +203,7 @@ export const info = {
       responsibilities: ["Led the development of a cross-platform inventory management system using React Native, resulting in a 50% reduction in stockout incidents for clients.",
         "Architected and implemented a real-time synchronization feature using WebSockets, enabling seamless offline functionality and reducing data conflicts by 80%.",
         "Optimized app bundle size, achieving a 40% reduction and significantly improving download and update rates.",
-        
+
       ]
     },
     {
