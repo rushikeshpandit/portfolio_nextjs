@@ -1,6 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 
-const Sidebar = ({isOpen, toggle}: {isOpen: boolean; toggle: () => void}): JSX.Element => {
+const Sidebar = ({isOpen, toggle}: {isOpen: boolean; toggle: () => void}): React.JSX.Element => {
   return (
     <>
       <div
