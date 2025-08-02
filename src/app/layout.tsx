@@ -7,6 +7,7 @@ import {SpeedInsights} from '@vercel/speed-insights/next';
 import styles from './styles.module.css';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
+import {Providers} from './providers';
 const Home = dynamic(() => import('./home/page'));
 const About = dynamic(() => import('./about/page'));
 const TechStack = dynamic(() => import('./techstack/page'));
@@ -28,20 +29,27 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Navigation />
-        <Home />
-        <About />
-        <TechStack />
-        <Professional />
-        <SideProjects />
-        <Contact />
-        <div className={styles.floatingbuttondiv}>
-          <a className={styles.fb} href="/Rushikesh_resume.pdf" target="_blank" rel="noopener noreferrer" download={true}>
-            <Image src={'/downloadpdf.svg'} alt={"downloadpdf"} width={50} height={50} className="h-14 w-14" />
-          </a>
-        </div>
-        <Analytics />
-        <SpeedInsights />
+        <Providers>
+          <Navigation />
+          <Home />
+          <About />
+          <TechStack />
+          <Professional />
+          <SideProjects />
+          <Contact />
+          <div className={styles.floatingbuttondiv} id="download_resume">
+            <a
+              className={styles.fb}
+              href="/Rushikesh_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download={true}>
+              <Image src={'/downloadpdf.svg'} alt={'downloadpdf'} width={50} height={50} className="h-14 w-14" />
+            </a>
+          </div>
+          <Analytics />
+          <SpeedInsights />
+        </Providers>
       </body>
     </html>
   );

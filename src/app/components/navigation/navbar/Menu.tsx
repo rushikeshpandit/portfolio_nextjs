@@ -19,12 +19,12 @@ export const Menu = () => {
           </li>
         ))}
 
-        <li>
+        <li key={'github'}>
           <Link href="https://github.com/rushikeshpandit" target="_blank" rel="noopener noreferrer" prefetch={false}>
             <Image src="/logo-github.svg" alt="github" width={'25'} height={'25'} className="relative" />
           </Link>
         </li>
-        <li>
+        <li key={'linkedin'}>
           <Link
             href="https://www.linkedin.com/in/rushikesh-pandit-646834100/"
             target="_blank"

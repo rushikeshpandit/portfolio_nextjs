@@ -1,22 +1,28 @@
+'use client';
 import {info} from '../info/Info';
 import Image from 'next/image';
 
 export default function TechStack() {
   return (
     <div id="techstack" className="h-screen w-screen justify-center items-center">
-      <div className="pt-16 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
+      <div className="pt-16 h-auto container my-auto mx-auto bg-white items-center justify-evenly">
         <h2 className="text-[#42446E]  font-bold, text-5xl">My Tech Stack</h2>
-        <h3 className="text-[#666666]  font-bold, text-xl pt-10 pb-10">
-          Technologies I&apos;ve been working with recently
-        </h3>
-        <div className="p-10 h-auto w-auto mx-auto flex flex-wrap">
-          {info.techStack.map(({name, image}) => (
-            <div key={name} className="w-[200px] h-[160px] flex-col flex items-center justify-center">
-              <Image src={image} alt={name} width={80} height={80} className="h-20 w-20" />
-              <p className="text-[#666666] m-4">{name}</p>
+        <h3 className="text-[#666666]  font-bold, text-xl pt-5">Technologies I&apos;ve been working with recently</h3>
+        {info.techStack.tools.map(({title, items}) => (
+          <div key={title}>
+            <h3 className="text-[#666666] font-bold text-xl pt-6">{title}</h3>
+            <div className="flex flex-col w-full">
+              <div className="flex flex-row">
+                {items.map(({name, image}) => (
+                  <div key={name} className="m-2 items-center justify-center flex flex-col align-middle">
+                    <Image src={image} alt={name} width={25} height={25} className="h-12 w-12" />
+                    <p className="text-[#666666] m-4">{name}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
