@@ -5,7 +5,7 @@ import { ThemeProvider } from "../components/ThemeProvider";
 export const metadata: Metadata = {
 	title: "Rushikesh Pandit — Senior Software Engineer",
 	description:
-		"10+ years crafting mobile experiences. React Native, iOS (Swift/SwiftUI), Elixir, Phoenix. Open to freelance & consulting.",
+		"11+ years crafting mobile experiences. React Native, iOS (Swift/SwiftUI), Elixir, Phoenix. Open to freelance & consulting.",
 	keywords: [
 		"React Native developer",
 		"iOS developer",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Rushikesh Pandit — Senior Software Engineer",
 		description:
-			"10+ years crafting mobile experiences across banking, social, and e-commerce.",
+			"11+ years crafting mobile experiences across banking, social, and e-commerce.",
 		type: "website",
 	},
 };

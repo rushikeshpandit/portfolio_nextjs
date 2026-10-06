@@ -63,7 +63,7 @@ export default function CountUp({
 
 	return (
 		<span>
-			{count}
+			{count.toLocaleString()}
 			{done ? suffix : ""}
 		</span>
 	);

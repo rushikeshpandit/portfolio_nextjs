@@ -5,12 +5,14 @@ import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
-  { href: "#about",      label: "About" },
-  { href: "#stack",      label: "Stack" },
+  { href: "#about", label: "About" },
+  { href: "#services", label: "Services" },
+  { href: "#stack", label: "Stack" },
+  { href: "#process", label: "Process" },
   { href: "#experience", label: "Experience" },
-  { href: "#apps",       label: "Apps" },
+  { href: "#apps", label: "Apps" },
   { href: "#opensource", label: "Open Source" },
-  { href: "#contact",    label: "Contact" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {

@@ -1,6 +1,8 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
+import { MotionConfig } from "framer-motion";
+import CursorRipple from "./CursorRipple";
 
 type Theme = "dark" | "light";
 
@@ -27,9 +29,12 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggle }}>
-      {children}
-    </ThemeContext.Provider>
+    <MotionConfig reducedMotion="user">
+      <ThemeContext.Provider value={{ theme, toggle }}>
+        <CursorRipple />
+        <div className="site-content">{children}</div>
+      </ThemeContext.Provider>
+    </MotionConfig>
   );
 }
 

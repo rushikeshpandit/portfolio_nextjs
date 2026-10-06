@@ -210,10 +210,12 @@ export default function Experience() {
           Education
         </div>
       </FadeIn>
-      <div className="edu-grid" style={{display: 'flex', gap: 14, flexWrap: 'wrap'}}>
+      <div
+        className="edu-grid"
+        style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 14}}>
         {eduEntries.map((entry, i) => (
           <FadeIn key={entry.degree} delay={i * 0.08}>
-            <div className="card" style={{padding: '24px 28px', flex: 1, minWidth: 260}}>
+            <div className="card" style={{padding: '24px 28px', height: '100%', boxSizing: 'border-box'}}>
               <div
                 className="font-display"
                 style={{fontSize: '0.9375rem', fontWeight: 700, color: 'var(--text)', marginBottom: 4}}>

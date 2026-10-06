@@ -40,13 +40,9 @@ export default function FadeIn({ children, delay = 0, className = "" }: FadeInPr
   return (
     <div
       ref={ref}
-      className={className}
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(18px)",
-        transition: `opacity 0.55s cubic-bezier(0.23,1,0.32,1) ${delay}s, transform 0.55s cubic-bezier(0.23,1,0.32,1) ${delay}s`,
-        willChange: "opacity, transform",
-      }}
+      className={`${className} fade-in`}
+      data-visible={visible}
+      style={{ transitionDelay: `${delay}s` }}
     >
       {children}
     </div>
